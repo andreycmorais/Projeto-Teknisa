@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Treinamento</title>
+    <!-- Caminho relativo é melhor que absolut: ../ volta a pasta
+    "Async" para não atrasar o carregamento da página-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.3.4/jquery.inputmask.bundle.min.js"></script>
+    <script src="../JS/script.js" async defer></script>
+    <link rel="stylesheet" href="../CSS/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h3>Validador de CPF</h3>
+      </div>
+      <div class="body">
+        <input
+          type="text"
+          id="cpf"
+          placeholder="Insira o seu CPF"
+          maxlength="14"
+        />
+        <button id="btValidar" onclick="validaCPF()">Validar</button>
+      </div>
+      <div class="footer">
+        <span id="resultado"></span>
+      </div>
+    </div>
+  </body>
+</html>
