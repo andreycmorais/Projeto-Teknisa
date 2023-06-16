@@ -1,19 +1,37 @@
 .container {
   text-align: center;
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding: 15%;
 }
 html {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.header {
+  color: rgba(0, 0, 0, 0.644);
 }
 .body input {
   padding: 8px;
   margin-right: 8px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  border-color: rgba(0, 0, 0, 0.644);
 }
 .body button {
   padding: 8px 16px;
   background-color: rgb(0, 147, 206);
   color: white;
-  border-color: white;
+  margin-top: 10px;
+  border: none;
+  border-bottom: 2px solid rgb(12, 104, 128);
+}
+.body button:active {
+  border-bottom: none;
 }
 .footer {
   margin-top: 25px;
